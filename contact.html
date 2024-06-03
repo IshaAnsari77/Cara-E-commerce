@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Cara/Contact</title>
+    <script src="https://kit.fontawesome.com/5be9f5fa8b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="header">
+        <a href="#"><img src="img/logo.png" class="logo" alt="Logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a  href="about.html">About</a></li>
+                <li><a class="active"href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section id="page-header" class="about-header">
+        <h2>#Let's Talk!</h2>
+        <p>LEAVE A MESSAGE,We Love Hear From You!</p>
+    </section>
+    <section id="contact" class="section-p1">
+        <div class="contact-details">
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you! Whether you have a question about our products, services, or anything else, our team is ready to answer all your questions.</p>
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <p><strong>Phone:</strong>+01 2222 365 / (+91) 01 2345 6789</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p><strong>Email:</strong> support@cara.com</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p><strong>Address:</strong>562 Wellington Road, Street 32, San Francisco</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <p><strong>Working Hours:</strong> Mon - Fri: 9am - 6pm</p>
+                </div>
+            </div>
+        </div>
+        <div class="contact-form">
+            <form id="submit-to-google-sheet">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        
+        <script>
+            const form = document.getElementById('submit-to-google-sheet');
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxyaCkbc7O7eN_lL7ARse47Shk59lwIpN1UlBHrRj_PiSOwZKUCYnnBPMXJygd59LOj/exec';
+        
+            form.addEventListener('submit', e => {
+                e.preventDefault();
+                fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                    .then(response => response.json())
+                    .then(response => {
+                        if (response.status === 'success') {
+                            console.log('Success!', response);
+                            // Reset form after successful submission
+                            form.reset();
+                        } else {
+                            console.error('Error!', response.message);
+                        }
+                    })
+                    .catch(error => console.error('Error!', error.message));
+            });
+        </script>
+        
+        
+      
+        
+    </section>
+    
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign Up For Newsletters</h4>
+            <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+        </div>
+        <div class="form">
+            <form action="https://formspree.io/f/meqybanb" method="POST">
+                <input type="email" name="email" placeholder="Your email address" required>
+                <button class="normal" type="submit">Sign Up</button>
+            </form>
+        </div>
+    </section>
+    
+    <style>
+    /* Ensure the form elements are aligned properly */
+    .form {
+        display: flex;
+        align-items: center;
+        justify-content: center; /* Center the form horizontally */
+    }
+    
+    .form form {
+        display: flex;
+    }
+    
+    .form input[type="email"] {
+        padding: 10px;
+        height: 40px; /* Make the email box taller */
+       
+       
+        border-radius: 5px 0 0 5px; /* Rounded corners for left side */
+    }
+    
+    .form button.normal {
+        height: 50px; /* Match the height of the email box */
+       
+        border-radius: 0 5px 5px 0; /* Rounded corners for right side */
+        padding: 0 20px;
+    }
+    </style>
+    
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="img/logo.png" alt="Logo">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> 562 Wellington Road, Street 32, San Francisco</p>
+            <p><strong>Phone:</strong> +01 2222 365 / (+91) 01 2345 6789</p>
+            <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="img/pay/app.jpg" alt="App Store">
+                <img src="img/pay/play.jpg" alt="Google Play">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="img/pay/pay.png" alt="Payment Gateways">
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024, Isha Ansari - HTML, CSS E-commerce</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
