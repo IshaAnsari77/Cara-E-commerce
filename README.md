@@ -2,13 +2,13 @@
  ## https://ishaansari77.github.io/Cara-E-commerce/
 ## Welcome to Cara E-commerce, an innovative online shopping platform providing a seamless and intuitive experience for both sellers and buyers.
 ## Navigation:
->> Home
->> Shop
->> Blog
->> About
->> Contact
+- Home
+- Shop
+- Blog
+- About
+- Contact
 # Sign Up For Newsletters:
-Get E-mail updates about our latest shop and special offers.
+ -You Can Get E-mail updates about our latest shop and special offers.
 With Your email address and Then Sign Up
 ## Contact Form
 - The user can contact us by filling in the details Name, Email, Subject, Message
