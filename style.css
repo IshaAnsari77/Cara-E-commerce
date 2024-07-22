@@ -530,6 +530,100 @@ footer .copyright{
   text-align: center;
   width:100%;
 }
+.rating-section {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.rating-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.rating-header h2 {
+  font-size: 37px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.rating-header p {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 0;
+}
+
+.rating-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rating-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.average-rating {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.average-stars {
+  font-size: 36px;
+  color: #088178;
+  margin-right: 10px;
+}
+
+.average-reviews {
+  font-size: 18px;
+  color: #777;
+}
+
+.stars {
+  display: flex;
+  justify-content: center;
+}
+
+.stars input[type="radio"] {
+  display: none;
+}
+
+.stars label {
+  font-size: 36px;
+  color: #088178;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+
+
+ /* Ensure all stars are the same size */
+.stars label {
+  font-size: 24px; /* Adjust the size as needed */
+  color: #088178; /* Gold color for stars */
+  display: inline-block;
+  width: 30px; /* Adjust width to ensure consistent spacing */
+  text-align: center; /* Center align the stars */
+}
+
+/* Hide radio buttons */
+.stars input[type="radio"] {
+  display: none;
+}
+
+
+/* Checked stars */
+.stars input[type="radio"]:checked ~ label {
+  color:#088178; /* Gold color for checked stars */
+}
 /*shop page*/
 #page-header1{
   background-image: url(img/banner/b1.jpg);
