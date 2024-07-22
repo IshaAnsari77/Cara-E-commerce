@@ -603,27 +603,6 @@ footer .copyright{
   transition: color 0.3s ease;
 }
 
-
-
- /* Ensure all stars are the same size */
-.stars label {
-  font-size: 24px; /* Adjust the size as needed */
-  color: #088178; /* Gold color for stars */
-  display: inline-block;
-  width: 30px; /* Adjust width to ensure consistent spacing */
-  text-align: center; /* Center align the stars */
-}
-
-/* Hide radio buttons */
-.stars input[type="radio"] {
-  display: none;
-}
-
-
-/* Checked stars */
-.stars input[type="radio"]:checked ~ label {
-  color:#088178; /* Gold color for checked stars */
-}
 /*shop page*/
 #page-header1{
   background-image: url(img/banner/b1.jpg);
