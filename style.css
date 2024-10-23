@@ -15,23 +15,17 @@ html {
 h1 {
   font-size: 50px;
   line-height: 64px;
-  color: #222;
+  color: #4B0082; /* Changed from #222 */
 }
 
 h2 {
   font-size: 46px;
   line-height: 54px;
-  color: #222;
+  color: #4B0082; /* Changed from #222 */
 }
 
-h4 {
-  font-size: 20px;
-  color: #222;
-}
-
-h6 {
-  font-weight: 700;
-  font-size: 12px;
+h4, h6 {
+  color: #4B0082; /* Changed */
 }
 
 p {
@@ -312,7 +306,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: url(img/banner/b2.jpg);
+  background-image: url(img/banner/b2.jpeg);
   width:100%;
   height:40vh;
   background-size: cover;
@@ -348,7 +342,7 @@ body {
   justify-content: center;
   align-items: flex-start;
   text-align: center;
-  background-image: url(img/banner/b17.jpg);
+  background-image: url(img/banner/b17.jpeg);
   min-width:580px;
   height: 50vh;
   background-size: cover;
@@ -386,7 +380,7 @@ body {
 
  }
  #sm-banner .banner-box2{
-  background-image: url(img/banner/b10.jpg);
+  background-image: url(img/banner/b10.jpeg);
  }
 
  
@@ -396,7 +390,7 @@ body {
   justify-content: center;
   align-items: flex-start;
   text-align: center;
-  background-image: url(img/banner/b7.jpg);
+  background-image: url(img/banner/b16.jpeg);
   min-width:30%;
   height: 30vh;
   background-size: cover;
@@ -409,7 +403,7 @@ body {
   background-image: url(img/banner/b4.jpg);
  }
  #banner3 .banner-box3{
-  background-image: url(img/banner/b18.jpg);
+  background-image: url(img/banner/b18.jpeg);
  }
  #banner3 h2{
   color:#fff;
@@ -530,6 +524,7 @@ footer .copyright{
   text-align: center;
   width:100%;
 }
+
 .rating-section {
   width: 100%;
   max-width: 600px;
@@ -602,9 +597,18 @@ footer .copyright{
   cursor: pointer;
   transition: color 0.3s ease;
 }
+
+
+
+ 
+
+
+
+
+
 /*shop page*/
 #page-header1{
-  background-image: url(img/banner/b1.jpg);
+  background-image: url(img/banner/b1.jpeg);
   width:100%;
   height:40vh;
   background-size: cover;
