@@ -122,6 +122,21 @@ function addAnimationToButton(button) {
 // Initial display of all products
 displayProducts(products);
 
+function revealMystery() {
+    const items = [
+        "Exclusive Designer Watch",
+        "Premium Headphones",
+        "Limited Edition T-shirt",
+        "Luxury Skincare Set",
+        "Portable Bluetooth Speaker",
+        "Stylish Sunglasses"
+    ];
+
+    const randomItem = items[Math.floor(Math.random() * items.length)];
+
+    document.getElementById("mysteryItem").textContent = randomItem;
+    document.getElementById("mysteryContent").style.display = "block";
+}
 
 
 
