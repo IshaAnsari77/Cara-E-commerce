@@ -1,6 +1,6 @@
-# Cara-E-commerce
+# Riva-E-commerce
  ## https://ishaansari77.github.io/Cara-E-commerce/
-## Welcome to Cara E-commerce, an innovative online shopping platform providing a seamless and intuitive experience for both sellers and buyers.
+## Welcome to Riva E-commerce, an innovative online shopping platform providing a seamless and intuitive experience for both sellers and buyers.
 ## Navigation:
 - Home
 - Shop
